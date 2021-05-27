@@ -1,6 +1,6 @@
 MAVEN_S2I_ARTIFACT_DIRS=target/quarkus-app
 MAVEN_ARGS=-Pnative 
 S2I_SOURCE_DEPLOYMENTS_FILTER=app lib quarkus quarkus-run.jar
-JAVA_OPTIONS=-Dquarkus.http.host=0.0.0.0 -Dquarkus.native.container-build=true
+JAVA_OPTIONS=-Dquarkus.http.host=0.0.0.0 -Dquarkus.native.container-build=true -Dquarkus.native.container-runtime=docker
 AB_JOLOKIA_OFF=true
 JAVA_APP_JAR=/deployments/quarkus-run.jar
