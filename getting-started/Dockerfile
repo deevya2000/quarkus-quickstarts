@@ -2,8 +2,8 @@
 ## Stage 1 : build with maven builder image with native capabilities
 FROM quay.io/quarkus/centos-quarkus-maven:21.1.0-java11 AS build
 #RUN echo $(ls -1 src)
-RUN echo $(ls -1 /workspace)
-RUN echo $(ls -1 /workspace/output)
+RUN echo $(ls -1 /)
+RUN echo $(ls -1 )
 COPY src /usr/src/app/src
 COPY pom.xml /usr/src/app
 USER root
