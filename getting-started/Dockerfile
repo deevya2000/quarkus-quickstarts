@@ -4,6 +4,8 @@ FROM quay.io/quarkus/centos-quarkus-maven:21.1.0-java11 AS build
 #RUN echo $(ls -1 src)
 RUN echo $(ls -1 /)
 RUN echo $(ls -1 )
+RUN echo $(ls -1 /workspace)
+
 COPY src /usr/src/app/src
 COPY pom.xml /usr/src/app
 USER root
